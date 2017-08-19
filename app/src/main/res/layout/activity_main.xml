@@ -57,7 +57,12 @@
             android:layout_below="@id/relative_2"
             android:layout_marginTop="@dimen/spacing_margin_default"
             android:background="@color/colorPrimary"
-            app:radius="@dimen/spacing_margin_default"/>
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:radius="24dp"
+            app:radius_right_top="24dp"
+            app:radius_left_bottom="24dp"
+            app:radius_left_top="24dp"
+            app:radius_right_bottom="24dp"/>
 
         <net.arvin.clipview.RadiusImageView
             android:id="@+id/img_1"

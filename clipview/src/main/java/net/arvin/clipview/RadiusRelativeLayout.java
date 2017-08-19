@@ -50,31 +50,26 @@ public class RadiusRelativeLayout extends RelativeLayout {
 
     public RadiusRelativeLayout setRadius(float radius) {
         mRadiusUtils.setRadius(radius);
-        postInvalidate();
         return this;
     }
 
     public RadiusRelativeLayout setRadiusLeftTop(int radiusLeftTop) {
         mRadiusUtils.setRadiusLeftTop(radiusLeftTop);
-        postInvalidate();
         return this;
     }
 
     public RadiusRelativeLayout setRadiusLeftBottom(float radiusLeftBottom) {
         mRadiusUtils.setRadiusLeftBottom(radiusLeftBottom);
-        postInvalidate();
         return this;
     }
 
     public RadiusRelativeLayout setRadiusRightTop(float radiusRightTop) {
         mRadiusUtils.setRadiusRightTop(radiusRightTop);
-        postInvalidate();
         return this;
     }
 
     public RadiusRelativeLayout setRadiusRightBottom(float radiusRightBottom) {
         mRadiusUtils.setRadiusRightBottom(radiusRightBottom);
-        postInvalidate();
         return this;
     }
 

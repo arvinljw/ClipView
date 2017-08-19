@@ -51,31 +51,26 @@ public class RadiusFrameLayout extends FrameLayout {
 
     public RadiusFrameLayout setRadius(float radius) {
         mRadiusUtils.setRadius(radius);
-        postInvalidate();
         return this;
     }
 
     public RadiusFrameLayout setRadiusLeftTop(int radiusLeftTop) {
         mRadiusUtils.setRadiusLeftTop(radiusLeftTop);
-        postInvalidate();
         return this;
     }
 
     public RadiusFrameLayout setRadiusLeftBottom(float radiusLeftBottom) {
         mRadiusUtils.setRadiusLeftBottom(radiusLeftBottom);
-        postInvalidate();
         return this;
     }
 
     public RadiusFrameLayout setRadiusRightTop(float radiusRightTop) {
         mRadiusUtils.setRadiusRightTop(radiusRightTop);
-        postInvalidate();
         return this;
     }
 
     public RadiusFrameLayout setRadiusRightBottom(float radiusRightBottom) {
         mRadiusUtils.setRadiusRightBottom(radiusRightBottom);
-        postInvalidate();
         return this;
     }
 

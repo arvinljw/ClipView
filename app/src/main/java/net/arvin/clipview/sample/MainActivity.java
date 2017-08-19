@@ -107,6 +107,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void startProgress() {
         progress.setProgress(0);
         sendAddProgressMsg();
+        pause.setText("暂停进度");
+        pause.setSelected(false);
+
     }
 
     private void pauseProgress() {

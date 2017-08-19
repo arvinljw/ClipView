@@ -45,31 +45,26 @@ public class RadiusTextView extends AppCompatTextView {
 
     public RadiusTextView setRadius(float radius) {
         mRadiusUtils.setRadius(radius);
-        postInvalidate();
         return this;
     }
 
     public RadiusTextView setRadiusLeftTop(int radiusLeftTop) {
         mRadiusUtils.setRadiusLeftTop(radiusLeftTop);
-        postInvalidate();
         return this;
     }
 
     public RadiusTextView setRadiusLeftBottom(float radiusLeftBottom) {
         mRadiusUtils.setRadiusLeftBottom(radiusLeftBottom);
-        postInvalidate();
         return this;
     }
 
     public RadiusTextView setRadiusRightTop(float radiusRightTop) {
         mRadiusUtils.setRadiusRightTop(radiusRightTop);
-        postInvalidate();
         return this;
     }
 
     public RadiusTextView setRadiusRightBottom(float radiusRightBottom) {
         mRadiusUtils.setRadiusRightBottom(radiusRightBottom);
-        postInvalidate();
         return this;
     }
 

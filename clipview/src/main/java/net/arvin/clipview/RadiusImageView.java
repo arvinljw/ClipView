@@ -46,31 +46,26 @@ public class RadiusImageView extends AppCompatImageView {
 
     public RadiusImageView setRadius(float radius) {
         mRadiusUtils.setRadius(radius);
-        postInvalidate();
         return this;
     }
 
     public RadiusImageView setRadiusLeftTop(int radiusLeftTop) {
         mRadiusUtils.setRadiusLeftTop(radiusLeftTop);
-        postInvalidate();
         return this;
     }
 
     public RadiusImageView setRadiusLeftBottom(float radiusLeftBottom) {
         mRadiusUtils.setRadiusLeftBottom(radiusLeftBottom);
-        postInvalidate();
         return this;
     }
 
     public RadiusImageView setRadiusRightTop(float radiusRightTop) {
         mRadiusUtils.setRadiusRightTop(radiusRightTop);
-        postInvalidate();
         return this;
     }
 
     public RadiusImageView setRadiusRightBottom(float radiusRightBottom) {
         mRadiusUtils.setRadiusRightBottom(radiusRightBottom);
-        postInvalidate();
         return this;
     }
 
