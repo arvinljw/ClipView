@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="net.arvin.clipview.sample.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <net.arvin.clipview.RadiusRelativeLayout
+            android:id="@+id/relative_1"
+            android:layout_width="@dimen/item_width"
+            android:layout_height="@dimen/item_height"
+            android:background="@color/colorAccent"
+            app:radius_left_top="@dimen/spacing_margin_default"/>
+
+        <net.arvin.clipview.RadiusLinearLayout
+            android:id="@+id/linear_1"
+            android:layout_width="@dimen/item_width"
+            android:layout_height="@dimen/item_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/spacing_margin_default"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            app:radius_left_bottom="@dimen/spacing_margin_default"/>
+
+        <net.arvin.clipview.RadiusRelativeLayout
+            android:id="@+id/relative_2"
+            android:layout_width="@dimen/item_width"
+            android:layout_height="@dimen/item_height"
+            android:layout_below="@id/relative_1"
+            android:layout_marginTop="@dimen/spacing_margin_default"
+            android:background="@color/colorAccent"
+            app:radius_right_top="@dimen/spacing_margin_default"/>
+
+        <net.arvin.clipview.RadiusLinearLayout
+            android:id="@+id/linear_2"
+            android:layout_width="@dimen/item_width"
+            android:layout_height="@dimen/item_height"
+            android:layout_alignBottom="@id/relative_2"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/spacing_margin_default"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            app:radius_right_bottom="@dimen/spacing_margin_default"/>
+
+        <net.arvin.clipview.RadiusFrameLayout
+            android:id="@+id/frame_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_below="@id/relative_2"
+            android:layout_marginTop="@dimen/spacing_margin_default"
+            android:background="@color/colorPrimary"
+            app:radius="@dimen/spacing_margin_default"/>
+
+        <net.arvin.clipview.RadiusImageView
+            android:id="@+id/img_1"
+            android:layout_width="@dimen/item_width_1"
+            android:layout_height="@dimen/item_width_1"
+            android:layout_below="@+id/frame_1"
+            android:layout_marginTop="@dimen/spacing_margin_default"
+            android:background="@mipmap/img_test"
+            android:scaleType="centerCrop"
+            app:radius="@dimen/spacing_margin_default"
+            />
+
+        <net.arvin.clipview.RadiusTextView
+            android:id="@+id/tv_start"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_1"
+            android:layout_alignTop="@id/img_1"
+            android:layout_marginLeft="@dimen/spacing_margin_default"
+            android:layout_toRightOf="@id/img_1"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="开始进度"
+            android:textColor="@android:color/white"
+            app:radius_left_top="@dimen/spacing_margin_small"
+            app:radius_right_top="@dimen/spacing_margin_small"
+            />
+
+        <net.arvin.clipview.RadiusTextView
+            android:id="@+id/tv_pause"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_1"
+            android:layout_alignBottom="@id/img_1"
+            android:layout_marginLeft="@dimen/spacing_margin_default"
+            android:layout_toRightOf="@id/img_1"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="暂停进度"
+            android:textColor="@android:color/white"
+            app:radius_left_bottom="@dimen/spacing_margin_small"
+            app:radius_right_bottom="@dimen/spacing_margin_small"
+            />
+
+        <net.arvin.clipview.sample.TextProgress
+            android:id="@+id/progress"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_1"
+            android:layout_below="@id/img_1"
+            android:layout_marginTop="@dimen/spacing_margin_default"
+            android:max="100"
+            android:progressDrawable="@drawable/bg_progress_h"
+            app:text="这是文字"
+            app:textColor="@color/colorAccent"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

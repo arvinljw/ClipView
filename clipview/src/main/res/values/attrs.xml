@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="radius" format="dimension"/>
+    <attr name="radius_left_top" format="dimension"/>
+    <attr name="radius_left_bottom" format="dimension"/>
+    <attr name="radius_right_top" format="dimension"/>
+    <attr name="radius_right_bottom" format="dimension"/>
+
+    <declare-styleable name="RadiusView">
+        <attr name="radius"/>
+        <attr name="radius_left_top"/>
+        <attr name="radius_left_bottom"/>
+        <attr name="radius_right_top"/>
+        <attr name="radius_right_bottom"/>
+    </declare-styleable>
+
+    <declare-styleable name="RadiusRelativeLayout">
+        <attr name="radius"/>
+        <attr name="radius_left_top"/>
+        <attr name="radius_left_bottom"/>
+        <attr name="radius_right_top"/>
+        <attr name="radius_right_bottom"/>
+    </declare-styleable>
+
+    <declare-styleable name="RadiusLinearLayout">
+        <attr name="radius"/>
+        <attr name="radius_left_top"/>
+        <attr name="radius_left_bottom"/>
+        <attr name="radius_right_top"/>
+        <attr name="radius_right_bottom"/>
+    </declare-styleable>
+
+    <declare-styleable name="RadiusFrameLayout">
+        <attr name="radius"/>
+        <attr name="radius_left_top"/>
+        <attr name="radius_left_bottom"/>
+        <attr name="radius_right_top"/>
+        <attr name="radius_right_bottom"/>
+    </declare-styleable>
+
+    <declare-styleable name="RadiusTextView">
+        <attr name="radius"/>
+        <attr name="radius_left_top"/>
+        <attr name="radius_left_bottom"/>
+        <attr name="radius_right_top"/>
+        <attr name="radius_right_bottom"/>
+    </declare-styleable>
+
+    <declare-styleable name="RadiusImageView">
+        <attr name="radius"/>
+        <attr name="radius_left_top"/>
+        <attr name="radius_left_bottom"/>
+        <attr name="radius_right_top"/>
+        <attr name="radius_right_bottom"/>
+    </declare-styleable>
+
+</resources>

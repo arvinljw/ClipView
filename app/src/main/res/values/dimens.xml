@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_width">140dp</dimen>
+    <dimen name="item_width_1">96dp</dimen>
+    <dimen name="item_height">48dp</dimen>
+    <dimen name="item_height_1">32dp</dimen>
+    <dimen name="spacing_margin_default">24dp</dimen>
+    <dimen name="spacing_margin_small">12dp</dimen>
+</resources>
