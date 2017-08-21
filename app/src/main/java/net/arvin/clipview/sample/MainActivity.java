@@ -109,7 +109,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         sendAddProgressMsg();
         pause.setText("暂停进度");
         pause.setSelected(false);
-
     }
 
     private void pauseProgress() {

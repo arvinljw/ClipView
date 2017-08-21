@@ -17,7 +17,6 @@
             android:id="@+id/relative_1"
             android:layout_width="@dimen/item_width"
             android:layout_height="@dimen/item_height"
-            android:background="@color/colorAccent"
             app:radius_left_top="@dimen/spacing_margin_default"/>
 
         <net.arvin.clipview.RadiusLinearLayout
@@ -26,7 +25,6 @@
             android:layout_height="@dimen/item_height"
             android:layout_alignParentRight="true"
             android:layout_marginLeft="@dimen/spacing_margin_default"
-            android:background="@color/colorPrimary"
             android:orientation="vertical"
             app:radius_left_bottom="@dimen/spacing_margin_default"/>
 
@@ -51,18 +49,14 @@
             app:radius_right_bottom="@dimen/spacing_margin_default"/>
 
         <net.arvin.clipview.RadiusFrameLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/frame_1"
             android:layout_width="match_parent"
             android:layout_height="@dimen/item_height"
             android:layout_below="@id/relative_2"
             android:layout_marginTop="@dimen/spacing_margin_default"
             android:background="@color/colorPrimary"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            app:radius="24dp"
-            app:radius_right_top="24dp"
-            app:radius_left_bottom="24dp"
-            app:radius_left_top="24dp"
-            app:radius_right_bottom="24dp"/>
+            app:radius="24dp"/>
 
         <net.arvin.clipview.RadiusImageView
             android:id="@+id/img_1"

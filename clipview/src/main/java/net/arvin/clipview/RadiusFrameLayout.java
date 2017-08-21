@@ -33,6 +33,7 @@ public class RadiusFrameLayout extends FrameLayout {
     public RadiusFrameLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         mRadiusUtils = new RadiusUtils(context, attrs);
+        setWillNotDraw(false);
     }
 
     @Override
@@ -72,6 +73,26 @@ public class RadiusFrameLayout extends FrameLayout {
     public RadiusFrameLayout setRadiusRightBottom(float radiusRightBottom) {
         mRadiusUtils.setRadiusRightBottom(radiusRightBottom);
         return this;
+    }
+
+    public float getRadius() {
+        return mRadiusUtils.getRadius();
+    }
+
+    public float getRadiusLeftTop() {
+        return mRadiusUtils.getRadiusLeftTop();
+    }
+
+    public float getRadiusLeftBottom() {
+        return mRadiusUtils.getRadiusLeftBottom();
+    }
+
+    public float getRadiusRightTop() {
+        return mRadiusUtils.getRadiusRightTop();
+    }
+
+    public float getRadiusRightBottom() {
+        return mRadiusUtils.getRadiusRightBottom();
     }
 
     @Override

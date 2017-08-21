@@ -41,6 +41,7 @@ public class RadiusTextView extends AppCompatTextView {
         canvas.clipPath(mRadiusUtils.getPath());
         super.draw(canvas);
         canvas.restore();
+
     }
 
     public RadiusTextView setRadius(float radius) {
@@ -67,6 +68,27 @@ public class RadiusTextView extends AppCompatTextView {
         mRadiusUtils.setRadiusRightBottom(radiusRightBottom);
         return this;
     }
+
+    public float getRadius() {
+        return mRadiusUtils.getRadius();
+    }
+
+    public float getRadiusLeftTop() {
+        return mRadiusUtils.getRadiusLeftTop();
+    }
+
+    public float getRadiusLeftBottom() {
+        return mRadiusUtils.getRadiusLeftBottom();
+    }
+
+    public float getRadiusRightTop() {
+        return mRadiusUtils.getRadiusRightTop();
+    }
+
+    public float getRadiusRightBottom() {
+        return mRadiusUtils.getRadiusRightBottom();
+    }
+
 
     @Override
     public Parcelable onSaveInstanceState() {

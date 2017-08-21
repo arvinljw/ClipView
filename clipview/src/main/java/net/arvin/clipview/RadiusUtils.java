@@ -54,6 +54,7 @@ public class RadiusUtils {
         radiusRightTop = array.getDimension(R.styleable.RadiusView_radius_right_top, 0);
         radiusRightBottom = array.getDimension(R.styleable.RadiusView_radius_right_bottom, 0);
         radius = array.getDimension(R.styleable.RadiusView_radius, 0);
+
         array.recycle();
 
         if (radius != 0) {

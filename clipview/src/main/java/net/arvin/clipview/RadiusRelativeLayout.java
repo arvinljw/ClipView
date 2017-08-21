@@ -73,6 +73,27 @@ public class RadiusRelativeLayout extends RelativeLayout {
         return this;
     }
 
+    public float getRadius() {
+        return mRadiusUtils.getRadius();
+    }
+
+    public float getRadiusLeftTop() {
+        return mRadiusUtils.getRadiusLeftTop();
+    }
+
+    public float getRadiusLeftBottom() {
+        return mRadiusUtils.getRadiusLeftBottom();
+    }
+
+    public float getRadiusRightTop() {
+        return mRadiusUtils.getRadiusRightTop();
+    }
+
+    public float getRadiusRightBottom() {
+        return mRadiusUtils.getRadiusRightBottom();
+    }
+
+
     @Override
     public Parcelable onSaveInstanceState() {
         return mRadiusUtils.onSaveInstanceState(super.onSaveInstanceState());
