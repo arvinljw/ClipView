@@ -33,7 +33,7 @@ allprojects {
 
 ```
 dependencies {
-	compile 'com.github.arvinljw:ClipView:v1.0.0'
+	compile 'com.github.arvinljw:ClipView:v1.0.1'
 }
 ```
 
